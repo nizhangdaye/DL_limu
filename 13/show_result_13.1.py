@@ -35,6 +35,7 @@ def show_image(img_tensor, title=None):
 # 定义ResNet18网络
 net = d2l.resnet18(10, 3)
 net.load_state_dict(torch.load('resnet18_13.1.params'))
+print(net)
 
 # 创建一个字典来存储每个卷积层的输出
 outputs = {}
